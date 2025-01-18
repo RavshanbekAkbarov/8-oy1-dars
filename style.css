@@ -6,48 +6,63 @@
 
 body {
   background-color: #0d082d;
-  background-image: url("images/background-desktop.png");
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Inconsolata;
 }
-.navbar {
+.line-element1 {
+  background-image: url("images/Ticket line element.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 825px;
+  height: 476px;
+  top: 1024px;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
+.line-element2 {
+  background-image: url("images/Line Element 2.png");
+  position: absolute;
+  right: 0;
+  width: 446px;
+  height: 208px;
+  top: 376px;
+  z-index: 100;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.line-element3 {
+  background-image: url("images/Profile\ Picture.png");
+  position: absolute;
+  width: 217px;
+  height: 217px;
+  top: 880px;
+  left: 980px;
+  border: 1px 0px 0px 0px;
+  opacity: 0.1px;
+  z-index: -100;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sate-hover {
+  background-image: url("images/Background\ Elements.png");
+}
+
 .navbar h1 {
   font-family: Inter;
   font-size: 60px;
   font-weight: 700;
   line-height: 112px;
   text-align: left;
-  text-underline-position: from-font;
   padding: 44px 0 44px 100px;
 }
 
-.line-element-1 {
-  position: absolute;
-  top: 10%;
-  left: -5%;
-  width: 300px;
-  height: auto;
-  background-image: url("images/Ticket\ line\ element.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 10;
-}
-
-.line-element-2 {
-  position: absolute;
-  bottom: -10%;
-  right: -5%;
-  width: 300px;
-  height: auto;
-  background-image: url("images/Line Element 2.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 100;
-}
 .wite {
   width: 1518px;
   height: 100px;
@@ -60,9 +75,11 @@ h3 {
   font-weight: 700;
   line-height: 31.49px;
   text-align: left;
-  text-underline-position: from-font;
   margin-bottom: 60px;
   text-align: center;
+}
+.content {
+  background-image: url("images/Background\ Elements.png");
 }
 .content h1 {
   font-size: 60px;
@@ -70,7 +87,6 @@ h3 {
   line-height: 66px;
   letter-spacing: -1px;
   text-align: center;
-  text-underline-position: from-font;
   margin-bottom: 20px;
 }
 p {
@@ -79,16 +95,23 @@ p {
   line-height: 28.8px;
   letter-spacing: -0.5px;
   text-align: center;
-  text-underline-position: from-font;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  color: #8888a1;
 }
 h4 {
+  width: 100%;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 12px;
 }
 
 form {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 12px;
   max-width: 460px;
   margin: 0 auto;
 }
@@ -96,13 +119,13 @@ form {
 input[type="text"],
 input[type="email"] {
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   border: none;
   border-radius: 10px;
-  font-size: 16px;
   background-color: #1a1235;
   color: #ffffff;
   outline: none;
+  margin-bottom: 24px;
 }
 
 input[type="text"]::placeholder,
@@ -121,12 +144,13 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-bottom: 100px;
+  z-index: 100;
 }
 
 button:hover {
   background-color: #d93c3a;
 }
-
 
 .custom-file-upload {
   width: 100%;
@@ -138,11 +162,24 @@ button:hover {
   cursor: pointer;
   background-color: transparent;
   font-size: 16px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21.6px;
-  text-underline-position: from-font;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.custom-file-upload img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.custom-file-upload:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
 .custom-file-upload input[type="file"] {
   display: none;
 }
