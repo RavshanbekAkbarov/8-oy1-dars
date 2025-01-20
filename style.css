@@ -106,17 +106,15 @@ input[type="email"] {
   font-weight: 700;
   margin-bottom: 10px;
   border: 1px solid white;
+  position: relative;
+  z-index: 100;
 }
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder {
   color: #8888a1;
 }
-#full-name,
-#email-address,
-#github-username {
-  cursor: text;
-}
+
 
 button {
   width: 440px;
