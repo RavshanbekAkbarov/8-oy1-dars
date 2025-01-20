@@ -5,12 +5,18 @@
 }
 
 body {
-  background-color: #0d082d;
   color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: Inconsolata;
+  background-image: url("images/background-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.continer {
+  background-image: url(images/Layn.svg);
+  background-position: center;
+  background-size: 900px;
+  background-position: center;
 }
 .line-element1 {
   background-image: url("images/Ticket line element.png");
@@ -19,7 +25,7 @@ body {
   left: 0;
   width: 825px;
   height: 476px;
-  top: 1024px;
+  top: 405px;
   z-index: 1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -31,7 +37,7 @@ body {
   right: 0;
   width: 446px;
   height: 208px;
-  top: 376px;
+  top: 40px;
   z-index: 100;
   background-size: contain;
   background-repeat: no-repeat;
@@ -41,8 +47,8 @@ body {
   position: absolute;
   width: 217px;
   height: 217px;
-  top: 880px;
-  left: 980px;
+  top: 360px;
+  left: 960px;
   border: 1px 0px 0px 0px;
   opacity: 0.1px;
   z-index: -100;
@@ -50,61 +56,33 @@ body {
   background-repeat: no-repeat;
 }
 
-.sate-hover {
-  background-image: url("images/Background\ Elements.png");
-}
-
-.navbar h1 {
-  font-family: Inter;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 112px;
-  text-align: left;
-  padding: 44px 0 44px 100px;
-}
-
-.wite {
-  width: 1518px;
-  height: 100px;
-  background-color: #ffffff;
-  margin-bottom: 40px;
-}
-
 h3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 31.49px;
-  text-align: left;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   text-align: center;
+  margin-top: 20px;
 }
-.content {
-  background-image: url("images/Background\ Elements.png");
-}
+
 .content h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
-  line-height: 66px;
   letter-spacing: -1px;
   text-align: center;
   margin-bottom: 20px;
 }
 p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 28.8px;
   letter-spacing: -0.5px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   color: #8888a1;
 }
-h4 {
+label {
   width: 100%;
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 700;
   text-align: left;
-  margin-bottom: 12px;
 }
 
 form {
@@ -112,29 +90,36 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  max-width: 460px;
+  max-width: 440px;
   margin: 0 auto;
 }
 
 input[type="text"],
 input[type="email"] {
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   border: none;
   border-radius: 10px;
-  background-color: #1a1235;
+  background-color: #070127;
   color: #ffffff;
   outline: none;
-  margin-bottom: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border: 1px solid white;
 }
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder {
   color: #8888a1;
 }
+#full-name,
+#email-address,
+#github-username {
+  cursor: text;
+}
 
 button {
-  width: 460px;
+  width: 440px;
   padding: 15px 20px;
   background-color: #e94d44;
   border: none;
@@ -144,7 +129,6 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-bottom: 100px;
   z-index: 100;
 }
 
@@ -154,14 +138,14 @@ button:hover {
 
 .custom-file-upload {
   width: 100%;
-  padding: 40px;
+  padding: 15px;
   text-align: center;
   border: 2px dashed #8888a1;
   border-radius: 5px;
   color: #8888a1;
   cursor: pointer;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 24px;
   display: flex;
   flex-direction: column;
@@ -170,8 +154,8 @@ button:hover {
 }
 
 .custom-file-upload img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-bottom: 5px;
 }
 

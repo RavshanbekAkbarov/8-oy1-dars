@@ -13,37 +13,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="line-element1"></div>
-    <div class="line-element2"></div>
-    <div class="line-element3"></div>
-    <div class="sate-hover">
-      <div class="navbar">
-        <h1>State: Hover</h1>
-      </div>
-      <div class="wite"></div>
-      <div class="content">
-        <h3><img src="images/logo-full.svg" alt="" /></h3>
-        <h1>
-          Your Journey to Coding Conf <br />
-          2025 Starts Here!
-        </h1>
-        <p>Secure your spot at next year’s biggest coding conference.</p>
-        <form>
-          <h4>Upload Avatar</h4>
+    <div class="continer">
+      <div class="line-element"></div>
+      <div class="line-element1"></div>
+      <div class="line-element2"></div>
+      <div class="line-element3"></div>
+      <div class="sate-hover">
+        <div class="content">
+          <h3><img src="images/logo-full.svg" alt="" /></h3>
+          <h1>
+            Your Journey to Coding Conf <br />
+            2025 Starts Here!
+          </h1>
+          <p>Secure your spot at next year’s biggest coding conference.</p>
+          <form>
+            <h4>Upload Avatar</h4>
 
-          <label  class="custom-file-upload">
-            <img src="images/icon-upload.svg" alt="" />
-            <input type="file" id="file-upload" />
-            Drag and Drop Your File Here
-          </label>
-          <h4>Full Name</h4>
-          <input type="text" required />
-          <h4>Email Address</h4>
-          <input type="email" placeholder="example@email.com" required />
-          <h4>GitHub Username</h4>
-          <input type="text" placeholder="@yourusername" />
-          <button type="submit">Generate My Ticket</button>
-        </form>
+            <label class="custom-file-upload">
+              <img src="images/icon-upload.svg" alt="" />
+              <input type="file" id="file-upload" />
+              Drag and Drop Your File Here
+            </label>
+
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" placeholder="Your full name" />
+
+            <label for="email-address">Email Address</label>
+            <input
+              id="email-address"
+              type="email"
+              placeholder="example@email.com"
+            />
+
+            <label for="github-username">GitHub Username</label>
+            <input
+              id="github-username"
+              type="text"
+              placeholder="@yourusername"
+            />
+
+            <button type="submit">Generate My Ticket</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
